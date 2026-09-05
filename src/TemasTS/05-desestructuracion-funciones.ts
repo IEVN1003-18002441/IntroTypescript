@@ -26,6 +26,7 @@ for  (const producto of productos) {
      return total*0.15
 }
 
+const articulos = [Telefono, Tablet]
 const isv= calularISv(articulos)
 console.log("ISV ",isv)
 
@@ -39,7 +40,6 @@ export function calcularISV2 (productos:Producto[]):[number,number]{
     return [total,total*0.15];
 }
 
-const articulos = [Telefono, Tablet]
 const[total,isv2] = calcularISV2(articulos);
 console.log("Total: ", total);
 console.log("ISV2 ", isv2);
